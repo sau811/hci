@@ -1,0 +1,329 @@
+EXP 2 : DROP DOWN LIST
+<!DOCTYPE html>
+<html>
+<head>
+<title>Serial Position Effect - Drop-down List</title>
+<style>
+/* Basic styling for the
+drop-down list */ select {
+padding: 5px; font-size:
+16px;
+}
+</style>
+</head>
+<body>
+<h1>Serial Position Effect - Drop-down List Example</h1>
+<label for="options">Select a Course:</label>
+<select id="options">
+<option value="" selected disabled hidden>Please select</option>
+<option value="option1">CSE</option>
+<option value="option2">EEE</option>
+<option value="option3">IT</option>
+<option value="option4">MECH</option>
+<option value="option5">CIVIL</option>
+</select>
+<script>
+// Add event listener to capture user selection
+var dropDown =
+document.getElementById("option
+s");
+dropDown.addEventListener("cha
+nge", function() {
+var selectedOption =
+dropDown.value;
+console.log("Selected option: " +
+selectedOption);
+// You can perform any desired actions based on the selected option here
+});
+</script>
+</body>
+</html>
+
+EXP 3 : MOBILE KEY
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mobile Keypad Design</title>
+<style>
+/* Basic styling for the mobile keypad */
+.keypad
+{
+display
+: grid;
+grid-template-columns:
+repeat(3, 1fr); gap: 5px;
+}
+.key {
+padding:
+
+15px; font-
+size: 18px;
+
+text-align:
+center;
+
+background-
+color: #f2f2f2;
+
+border-radius:
+5px;
+}
+</style>
+</head>
+<body>
+<h1>Mobile Keypad Design</h1>
+<div class="keypad">
+<div class="key">1</div>
+<div class="key">2</div>
+<div class="key">3</div>
+<div class="key">4</div>
+<div class="key">5</div>
+<div class="key">6</div>
+<div class="key">7</div>
+<div class="key">8</div>
+<div class="key">9</div>
+<div class="key">*</div>
+<div class="key">0</div>
+<div class="key">#</div>
+</div>
+</body>
+</html>
+
+EXP 4: HOUSE HOLD ITEMS
+<!DOCTYPE html>
+<html>
+<head>
+<title>Household Items Ordering Menu</title>
+<style>
+/* Basic styling for
+the menu */ ul {
+list-style-type: none;
+}
+li {
+padding: 10px;
+}
+.submen
+u {
+display:
+none;
+}
+li:hover .submenu {
+display: block;
+}
+</style>
+</head>
+<body>
+<h1>Household Items Ordering Menu</h1>
+<ul>
+<li>Electronics
+<ul class="submenu">
+<li>TV</li>
+<li>Refrigerator</li>
+<li>Washing Machine</li>
+</ul>
+
+</li>
+
+<li>Furniture
+<ul class="submenu">
+<li>Sofa</li>
+<li>Bed</li>
+<li>Dining Table</li>
+</ul>
+</li>
+<li>Kitchen Appliances
+<ul class="submenu">
+<li>Microwave Oven</li>
+<li>Coffee Maker</li>
+<li>Toaster</li>
+</ul>
+</li>
+<li>Home Decor
+<ul class="submenu">
+<li>Rugs</li>
+<li>Curtains</li>
+<li>Wall Art</li>
+</ul>
+</li>
+</ul>
+</body>
+</html>
+
+EXP 5: ATM INTERFACE
+<!DOCTYPE html>
+<html>
+<head>
+<title>ATM Interface</title>
+<style>
+body {font-family: Arial, sans-serif; text-align: center;}
+.container {margin: 50px auto; width: 300px;}
+.input-group {margin-bottom: 20px;}
+.input-group label {display: block; text-align: left; margin-bottom: 5px;}
+
+.input-group input {width: 100%; padding: 5px; font-size: 16px; border-
+radius: 5px; border: 1px solid #ccc;}
+
+.button {background-color: #4CAF50; color: white; padding: 10px
+20px; font-size: 16px; border: none; border-radius: 5px; cursor:
+pointer;}
+.button:hover {background-color: #45a049;}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>ATM Interface</h1>
+<form>
+<div class="input-group">
+<label for="account">Account Number</label>
+<input type="text" id="account" name="account" placeholder="Enter
+account number">
+</div>
+<div class="input-group">
+<label for="pin">PIN</label>
+<input type="password" id="pin" name="pin" placeholder="Enter
+PIN">
+</div>
+<div class="input-group">
+<input type="submit" value="Login" class="button">
+</div>
+</form>
+</div>
+</body>
+</html>
+
+EXP 6: TV REMOTE PROTOTYPE
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mobile Keypad</title>
+<style
+>
+body
+{
+display: flex;
+
+justify-
+content:
+
+center; align-
+items: center;
+
+height: 100vh;
+margin: 0;
+}
+.keypad
+{
+display
+: grid;
+grid-template-columns:
+repeat(3, 1fr); gap: 10px;
+width: 200px}
+.key {
+displa
+y: flex;
+justify-content:
+
+center; align-
+items: center;
+
+height: 50px;
+
+background-
+color: #ccc;
+
+border-radius:
+5px; cursor:
+pointer;
+}
+#feedback {
+
+margin-
+top: 10px;
+
+font-
+weight:
+
+bold; text-
+align:
+
+center;
+}
+
+button {
+margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<div class="keypad">
+<div class="key" onclick="handleKeyPress('1')">1</div>
+<div class="key" onclick="handleKeyPress('2')">2</div>
+<div class="key" onclick="handleKeyPress('3')">3</div>
+<div class="key" onclick="handleKeyPress('4')">4</div>
+<div class="key" onclick="handleKeyPress('5')">5</div>
+<div class="key" onclick="handleKeyPress('6')">6</div>
+<div class="key" onclick="handleKeyPress('7')">7</div>
+<div class="key" onclick="handleKeyPress('8')">8</div>
+<div class="key" onclick="handleKeyPress('9')">9</div>
+<div class="key" onclick="handleKeyPress('*')">*</div>
+<div class="key" onclick="handleKeyPress('0')">0</div>
+<div class="key" onclick="handleKeyPress('#')">#</div>
+</div>
+<button onclick="deleteLastKeyPressed()">Delete</button>
+<p id="feedback"></p>
+<script>
+var pressedKeys = [];
+function
+handleKeyPress(key) {
+pressedKeys.push(key);
+updateFeedback();
+}
+function
+deleteLastKeyPressed() {
+pressedKeys.pop();
+updateFeedback();
+}
+function updateFeedback() {
+document.getElementById("feedback").innerText = "Pressed keys: " +
+pressedKeys.join("");
+}
+</script>
+</body>
+</html>
+
+EXP 7: PROTYPE OF AN AUTOMATIC VENDING MACHINE
+<!DOCTYPE html>
+<html>
+<head>
+<title>Automatic Vending Machine</title>
+<style>
+
+body{font-family:Arial,sans-serif;background-
+color:#f2f2f2}.container{margin:50px auto;width:400px;text-
+align:center;padding:20px;background-color:#fff;border-
+radius:5px;box- shadow:0 0 10px rgba(0,0,0,.1)}.button{display:inline-
+block;padding:10px 20px;margin:10px;background-
+color:#4CAF50;color:#fff;text-decoration:none;border-
+radius:4px;transition:background-color
+
+.3s}.button:hover{background-color:#45a049}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Automatic Vending Machine</h1>
+<p>Select your drink:</p>
+
+<button class="button">Coca-Cola</button>
+<button class="button">Pepsi</button>
+<button class="button">Sprite</button>
+<button class="button">Fanta</button>
+
+<p>Payment Options:</p>
+<button class="button">Credit Card</button>
+<button class="button">Mobile Payment</button>
+
+<p>Thank you for using the vending machine!</p>
+</div>
+</body>
+</html>
